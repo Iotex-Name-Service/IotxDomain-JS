@@ -5,7 +5,7 @@ JavaScript SDK for integrating IotxDomainJS
 Install Package
 
 ```
-npm i IotxDomainJS
+npm i iotxdomainjs
 ```
 
 Coming soon!
