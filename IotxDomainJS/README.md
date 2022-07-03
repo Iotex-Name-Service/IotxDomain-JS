@@ -1,6 +1,8 @@
 # IotxDomainJS SDK
 
-JavaScript SDK for integrating IotxDomainJS
+JavaScript SDK for integrating iotxdomainjs
+
+https://www.npmjs.com/package/iotxdomainjs
 
 Install Package
 
