@@ -28,4 +28,8 @@ const config =
 	defaultNetwork: "mainnet"
 }
 ```
+Install
+```
+const sdk = iotxdomainjs.SDK(config);
+```
 
