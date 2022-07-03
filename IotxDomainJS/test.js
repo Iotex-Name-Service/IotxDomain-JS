@@ -1,5 +1,6 @@
 const iotxdomainjs = require('iotxdomainjs');
 
+// set config
 const config = 
 {
 	testnet:{
@@ -17,41 +18,48 @@ call();
 
 async function call(){
 	
-	// setup
+	// install
 	const sdk = iotxdomainjs.SDK(config);
 
 	// your domains
 	const _domain = "iotexdomains.iotx";
 	
-	// get owner of domain
+	// resolve .iotx domain to get the address of the owner. metadata: true // false default return metadata along with domain information
 	const owner = await sdk.getOwner(_domain, true);
 
 	console.log(owner);
 
-	// get owner of domain
+	// your domains
 	const _address = "xxx";
 	
+	// get total domains
 	const balance = await sdk.balanceOf(_address);
 
 	console.log(balance);
 
+	// get a domain default from a user's address, requiring the user to set the default domain name initially.
 	const domain = await sdk.getDomain(_address);
 
 	console.log(domain);
 	
+	// gets all the domains owned by an wallet address.
 	const domains = await sdk.getDomains(_address);
 
 	console.log(domains);
+	
+	//Get a value of metadata from the domain name
 	
 	const _avatar = await sdk.getMetadata("avatar", _domain);
 
 	console.log(_avatar);
 	
+	//Get values of metadata from the domain name
+	
 	const _values = await sdk.getMetadatas(["avatar", "website", "twitter"], _domain);
 
 	console.log(_values);
 	
-		
+	// Namehash is a recursive process that can generate a unique hash for any valid domain name.
 	const hashname = await sdk.hashname(_domain);
 
 	console.log(hashname);
