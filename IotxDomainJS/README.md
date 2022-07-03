@@ -4,8 +4,13 @@ JavaScript SDK for integrating iotxdomainjs
 
 https://www.npmjs.com/package/iotxdomainjs
 
-Install Package
+Before installing the package you need to check and be sure to install the packages below:
 
+```
+npm install web3 
+npm install @iotexproject/iotex-address-ts
+```
+Install Package
 ```
 npm i iotxdomainjs
 ```
