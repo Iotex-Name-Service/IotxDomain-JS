@@ -15,7 +15,7 @@ Install Package
 npm install iotxdomainjs
 ```
 
-Call 
+Get started 
 ```
 const iotxdomainjs = require('iotxdomainjs');
 ```
