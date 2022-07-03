@@ -12,7 +12,7 @@ npm install @iotexproject/iotex-address-ts
 ```
 Install Package
 ```
-npm i iotxdomainjs
+npm install iotxdomainjs
 ```
 
 Call 
