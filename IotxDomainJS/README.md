@@ -36,11 +36,14 @@ const sdk = iotxdomainjs.SDK(config);
 // your domains
 const _domain = "iotexdomains.iotx";
 	
-// resolve .iotx domain to get the address of the owner. metadata: true // false default return metadata along with domain information
+// resolve .iotx domain to get the address of the owner.
 const owner = await sdk.getOwner(_domain);
 
 console.log(owner);
 ```
+Pls update test.js for specific instructions
+
+Thanks!
 
 
 
