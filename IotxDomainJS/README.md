@@ -6,6 +6,13 @@ Npm: https://www.npmjs.com/package/iotxdomainjs
 
 Github: https://github.com/Iotex-Name-Service/IotxDomain-JS/
 
+Before installing the package you need to check and be sure to install the packages below:
+
+```
+npm install web3 
+npm install @iotexproject/iotex-address-ts
+```
+
 Install Package
 
 ```
