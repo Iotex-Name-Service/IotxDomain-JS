@@ -2,20 +2,17 @@
 
 JavaScript SDK for integrating iotxdomainjs
 
-https://www.npmjs.com/package/iotxdomainjs
+Npm: https://www.npmjs.com/package/iotxdomainjs
 
-Before installing the package you need to check and be sure to install the packages below:
+Github: https://github.com/Iotex-Name-Service/IotxDomain-JS/
 
-```
-npm install web3 
-npm install @iotexproject/iotex-address-ts
-```
 Install Package
+
 ```
-npm install iotxdomainjs
+npm i iotxdomainjs
 ```
 
-Get started 
+Call 
 ```
 const iotxdomainjs = require('iotxdomainjs');
 ```
@@ -26,11 +23,11 @@ const config =
 {
 	testnet:{
 		rpcUrl: "",
-		contactAddress: ""
+		contractAddress: ""
 	},
 	mainnet:{ 
 		rpcUrl: "https://babel-api.mainnet.iotex.io/",
-		contactAddress: "0x4608eF714C8047771054757409c1A451CEf8d69f"
+		contractAddress: "0x4608eF714C8047771054757409c1A451CEf8d69f"
 	},
 	defaultNetwork: "mainnet"
 }
@@ -42,11 +39,16 @@ const sdk = iotxdomainjs.SDK(config);
 ```
 // your domains
 const _domain = "iotexdomains.iotx";
+
+const _address = "xxx";
 	
 // resolve .iotx domain to get the address of the owner.
 const owner = await sdk.getOwner(_domain);
 
 console.log(owner);
+
+// get a domain default from a user's address, requiring the user to set the default domain name initially.
+const domain = await sdk.getDomain(_address);
 ```
 Pls update test.js for specific instructions
 

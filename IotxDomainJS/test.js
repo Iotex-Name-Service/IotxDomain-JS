@@ -5,11 +5,11 @@ const config =
 {
 	testnet:{
 		rpcUrl: "",
-		contactAddress: ""
+		contractAddress: ""
 	},
 	mainnet:{ 
 		rpcUrl: "https://babel-api.mainnet.iotex.io/",
-		contactAddress: "0x4608eF714C8047771054757409c1A451CEf8d69f"
+		contractAddress: "0x4608eF714C8047771054757409c1A451CEf8d69f"
 	},
 	defaultNetwork: "mainnet"
 }
@@ -30,7 +30,7 @@ async function call(){
 	console.log(owner);
 
 	// your domains
-	const _address = "xxx";
+	const _address = "0xbb48801EAF9947db8b49a96DEA231C5893125B9c";
 	
 	// get total domains
 	const balance = await sdk.balanceOf(_address);
